@@ -35,6 +35,7 @@ def limpiar_datos(df):
     for col in columnas_binarias:
         df[col] = df[col].map({'Si': 1, 'No': 0, 'S': 1, 'N': 0})
     
+    
     # 4. Manejar valores faltantes
     # Para columnas numéricas (puntajes)
     columnas_puntajes = ['PUNT_GLOBAL', 'PUNT_INGLES', 'PUNT_MATEMATICAS', 
